@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/images/profile-image.jpg" type="image/svg+xml" />
+        <!-- ============= Theme ============= -->
+        <script src="./assets/js/theme.js"></script>
+        <script>
+            const theme = new Theme("light");
+            theme.init();
+        </script>
+
+        <!-- ============= Remixicon ============= -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <!-- ============= SwiperJS Stylesheet ============= -->
+        <link rel="stylesheet" href="./assets/css/swiper.css" />
+        <!-- ============= CSS Stylesheet ============= -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- ============= SwiperJS ============= -->
+        <script src="./assets/js/swiper.js"></script>
+        <!-- ============= ScrollRevealJS ============= -->
+        <script src="./assets/js/scrollReveal.js"></script>
+        <!-- ============= EmailJS ============= -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!-- ============= JavaScript ============= -->
+        <script src="./assets/js/script.js" defer></script>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- ============= Header ============= -->
+        <header class="header d-flex align-center">
+            <nav class="header__container container d-flex justify-between align-center">
+                <div class="header__logo">
+                    <a href="index.html">CHARLES FRED</a>
+                </div>
+                <div class="group d-flex align-center">
+                    <ul class="header__links d-flex">
+                        <li class="header__link body-md"><a href="#home">Accueil</a></li>
+                        <li class="header__link body-md"><a href="#about">À Propos</a></li>
+                        <li class="header__link body-md"><a href="#skills">Compétences</a></li>
+                        <li class="header__link body-md"><a href="#portfolio">portfolio</a></li>
+                        <li class="header__link body-md"><a href="#services">services</a></li>
+                        <li class="header__link body-md"><a href="#contact">contact</a></li>
+                    </ul>
+                    <div class="color-theme body-md d-flex align-center justify-center">
+                        <i class="ri-moon-fill"></i>
+                    </div>
+                </div>
+                <div class="header__links-mobile justify-center align-center">
+                    <ul class="d-flex align-center justify-center">
+                        <li class="header__link-mobile d-flex align-center justify-center">
+                            <a href="#home" class="d-flex justify-center">
+                                <i class="ri-home-5-fill"></i>
+                                <p>Accueil</p>
+                            </a>
+                        </li>
+                        <li class="header__link-mobile d-flex align-center justify-center">
+                            <a href="#about" class="d-flex justify-center">
+                                <i class="ri-user-3-fill"></i>
+                                <p>À Propos</p>
+                            </a>
+                        </li>
+                        <li class="header__link-mobile d-flex align-center justify-center">
+                            <a href="#skills" class="d-flex justify-center">
+                                <i class="ri-medal-fill"></i>
+                                <p>Compétences</p>
+                            </a>
+                        </li>
+                        <li class="header__link-mobile d-flex align-center justify-center">
+                            <a href="#portfolio" class="d-flex justify-center">
+                                <i class="ri-stack-fill"></i>
+                                <p>portfolio</p>
+                            </a>
+                        </li>
+                        <li class="header__link-mobile d-flex align-center justify-center">
+                            <a href="#services" class="d-flex justify-center">
+                                <i class="ri-customer-service-2-fill"></i>
+                                <p>services</p>
+                            </a>
+                        </li>
+                        <li class="header__link-mobile d-flex align-center justify-center">
+                            <a href="#contact" class="d-flex justify-center">
+                                <i class="ri-send-plane-fill"></i>
+                                <p>contact</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ============= Home Section ============= -->
+        <section id="home" class="home d-flex align-center">
+            <div class="home__container container d-flex align-center">
+                <div class="home__content d-flex align-center justify-between">
+                    <div class="home__left-side d-flex f-column r-gap-2">
+                        <div class="group d-flex f-column">
+                            <h1 class="home__title heading-1">Je suis CHARLES Freed</h1>
+                            <p class="home__subtitle subtitle-lg">Je suis <span>Développeur Web Full Stack</span></p>
+                            <p class="home__text body-es">
+                                J'ai tout appris en <strong>Autodidacte</strong><br />
+                                Donc chaque jours je me forme d'avantage pour être au point.
+                            </p>
+                        </div>
+                        <div class="home__scoial-links d-flex c-gap-1">
+                            <a href="#" class="home__social-link subtitle-es">
+                                <i class="ri-facebook-circle-fill"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/fred-charles-1aa77a2b6/" class="home__social-link subtitle-es">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://github.com/ScriptByHector" class="home__social-link subtitle-es">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </div>
+                        <a href="#contact" class="btn btn-primary d-flex align-center c-gap-1">Contacter moi<i class="ri-send-plane-fill"></i></a>
+                    </div>
+                    <div class="home__right-side">
+                        <div class="home__image d-flex justify-end">
+                            <img src="./assets/images/profile-image.jpg" alt="profile image" />
+                        </div>
+                    </div>
+                </div>
+                <a href="#about" class="scroll-down-btn">
+                    <svg id="scroll-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.02 22.74" width="20">
+                        <rect x="1" y="1" width="11.02" height="20.74" rx="5.51" ry="5.51" fill="transparent" stroke="#1b7be2" stroke-miterlimit="10" stroke-width="2" />
+                        <circle cx="6.51" cy="8.14" r="1.47" fill="#1b7be2" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============= About Section ============= -->
+        <section id="about" class="about">
+            <div class="section__title">
+                <h2 class="heading-2">À Propos de Moi</h2>
+            </div>
+            <div class="about__container container">
+                <div class="about__content d-flex justify-between align-center gap-2">
+                    <div class="about__left-side d-flex">
+                        <div class="about__image">
+                            <img src="./assets/images/profile-image.jpg" alt="about image" />
+                        </div>
+                    </div>
+                    <div class="about__right-side d-flex f-column r-gap-2">
+                        <div class="group">
+                            <p class="about__title subtitle-lg">Je suis <span>Fred</span></p>
+                            <p class="about__text body-es">
+                                A web developer and UI / UX designer dedicated to transforming ideas into digital experiences. With an experience in design and a knack for coding,
+                                I thrive on building modern and user-friendly websites.
+                            </p>
+                        </div>
+                        <div class="group d-flex align-center gap-1 f-wrap">
+                            <div class="about__info d-flex align-center c-gap-1">
+                                <h4 class="heading-4">2+</h4>
+                                <p class="body-es">Mes années d'expériences</p>
+                            </div>
+                            <div class="about__info d-flex align-center c-gap-1">
+                                <h4 class="heading-4">5K</h4>
+                                <p class="body-es">Clients</p>
+                            </div>
+                            <div class="about__info d-flex align-center c-gap-1">
+                                <h4 class="heading-4">30+</h4>
+                                <p class="body-es">Projets réalisés</p>
+                            </div>
+                        </div>
+                        <a href="./assets/cv/Charles Fred Développeur Junior CV.pdf" target="_blank" class="btn btn-primary d-flex align-center c-gap-1">Voir Mon CV <i class="ri-download-2-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Skills Section ============= -->
+        <section id="skills" class="skills">
+            <div class="section__title">
+                <h2 class="heading-2">Compétences</h2>
+            </div>
+            <div class="skills__container container">
+                <div class="skills__content d-flex f-column">
+                    <!-- Skills & Tools -->
+                    <div class="skills__skills-tools" id="skillsANDtools">
+                        <div class="skills__subtitle">
+                            <p class="subtitle-md">Compétences & Outils</p>
+                        </div>
+                        <div class="skills__items d-flex f-wrap justify-between r-gap-2"></div>
+                    </div>
+
+                    <!-- Education & Experience -->
+                    <div class="skills__edu-exp" id="eduANDexp">
+                        <div class="skills__subtitle">
+                            <p class="subtitle-md">Formations & Experiences</p>
+                        </div>
+                        <div class="skills__wrapper d-flex justify-between gap-2">
+                            <div class="skills__edu timeline">
+                                <p class="timeline__title subtitle-sm">Formations</p>
+                                <div class="timeline__items d-flex f-column r-gap-2" id="edu"></div>
+                            </div>
+                            <div class="skills__exp timeline">
+                                <p class="timeline__title subtitle-sm">Experience</p>
+                                <div class="timeline__items d-flex f-column r-gap-2" id="exp"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Portfolio Section ============= -->
+        <section id="portfolio" class="portfolio">
+            <div class="section__title">
+                <h2 class="heading-2">portfolio</h2>
+            </div>
+            <div class="portfolio__container container">
+                <div class="portfolio__content d-flex f-wrap gap-2 justify-center">
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="./assets/images/project-01.jpg" alt="E-commerce Website" />
+                        </div>
+                        <div class="project__details">
+                            <p class="project__title body-md">Site Web E-commerce</p>
+                            <p class="project__subtitle body-es">Site Web</p>
+                        </div>
+                        <a href="#" class="project__link"><i class="ri-share-box-line"></i></a>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="./assets/images/project-02.jpg" alt="UI/UX Design" />
+                        </div>
+                        <div class="project__details">
+                            <p class="project__title body-md">UI/UX Design</p>
+                            <p class="project__subtitle body-es">Design</p>
+                        </div>
+                        <a href="#" class="project__link"><i class="ri-share-box-line"></i></a>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="./assets/images/project-03.jpg" alt="Online Store" />
+                        </div>
+                        <div class="project__details">
+                            <p class="project__title body-md">Boutine en Ligne</p>
+                            <p class="project__subtitle body-es">Site Web</p>
+                        </div>
+                        <a href="#" class="project__link"><i class="ri-share-box-line"></i></a>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="./assets/images/project-04.jpg" alt="Branding Design" />
+                        </div>
+                        <div class="project__details">
+                            <p class="project__title body-md">Conception de Marque </p>
+                            <p class="project__subtitle body-es">design</p>
+                        </div>
+                        <a href="#" class="project__link"><i class="ri-share-box-line"></i></a>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="./assets/images/project-05.jpg" alt="Web Design" />
+                        </div>
+                        <div class="project__details">
+                            <p class="project__title body-md">Web Design</p>
+                            <p class="project__subtitle body-es">design</p>
+                        </div>
+                        <a href="#" class="project__link"><i class="ri-share-box-line"></i></a>
+                    </div>
+                    <div class="project">
+                        <div class="project__image">
+                            <img src="./assets/images/project-06.jpg" alt="Travel Website" />
+                        </div>
+                        <div class="project__details">
+                            <p class="project__title body-md">Travel Site Web de Voyage</p>
+                            <p class="project__subtitle body-es">website</p>
+                        </div>
+                        <a href="#" class="project__link"><i class="ri-share-box-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Services Section ============= -->
+        <section id="services" class="services">
+            <div class="section__title">
+                <h2 class="heading-2">services</h2>
+            </div>
+            <div class="services__container container">
+                <div class="services__content d-flex f-wrap gap-2 justify-center">
+                    <div class="service">
+                        <div class="service__image">
+                            <img src="./assets/images/services-01.jpg" alt="Web Design" />
+                        </div>
+                        <div class="service__details d-flex f-column r-gap-1">
+                            <div class="service__icon"><i class="ri-layout-4-fill"></i></div>
+                            <div class="group">
+                                <p class="service__title subtitle-es">Web Design</p>
+                                <div class="service__more body-sm d-flex align-center">
+                                    <p>Voir Plus</p>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__btmsheet d-flex f-column">
+                            <span class="service__btmsheet-dragicon"></span>
+                            <p class="service__btmsheet-title body-lg">Ce que je Fournis</p>
+                            <p class="service__btmsheet-text body-sm">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aperiam necessitatibus doloribus debitis fuga cum? Accusantium harum quas,
+                                inventore et ratione suscipit culpa? Aliquid maiores officia quod hic ea ratione! Distinctio sit quam sed cum magnam voluptatibus ex autem assumenda
+                                velit? Culpa reprehenderit repudiandae quo incidunt officia nemo maxime fugit laboriosam eius? Dolore temporibus esse vero dicta odit cum
+                                repudiandae. Ex repellat, dolorem totam deserunt enim nam. Quod nemo perferendis id nobis deleniti voluptate repudiandae optio officia eos. Fuga
+                                nulla sit ipsa tenetur necessitatibus pariatur commodi officiis quia consequuntur vero. Iusto, voluptatem incidunt! Sed aut atque repudiandae optio,
+                                dignissimos sapiente odio libero architecto quis, iure soluta debitis corporis excepturi ut ad obcaecati ipsam non laudantium autem. Molestiae quae
+                                obcaecati nam. Rerum, possimus! Dolores, ducimus rerum. Distinctio totam deleniti ratione, esse quo atque autem dolor aliquid id veritatis
+                                consequatur tenetur fugit, neque porro repellat! Modi quaerat tempore nesciunt dicta omnis ut! Assumenda laborum quas dolor accusantium ex doloribus
+                                officia, saepe repellat. Veritatis id quia nesciunt sint! Possimus magnam atque qui consequuntur quibusdam rerum quaerat, accusamus quod doloremque
+                                explicabo. Harum, laborum reiciendis? Ut non, fugit doloribus cum, facilis ratione, asperiores neque ducimus id quos dolor. Praesentium rem, veniam
+                                neque similique ratione libero adipisci saepe quisquam deleniti accusamus ex ab molestiae vitae omnis. Iusto voluptate officia laborum nemo
+                                inventore explicabo, qui itaque eum neque, alias laudantium ea a soluta debitis dolorem dolore, minima magni. Placeat fugiat animi magni doloremque
+                                non possimus et amet? Molestias fugit ut quis. Harum cum tempore officia, ab autem quod eveniet laudantium corporis! Minima quos nostrum
+                                dignissimos, expedita aspernatur, sunt libero animi ullam harum explicabo alias, commodi ex distinctio? Accusamus facilis deserunt obcaecati eveniet
+                                minima a nobis possimus doloremque rem aspernatur suscipit assumenda ea, cumque, animi ipsum. Id voluptatem impedit modi esse enim, non fuga numquam
+                                aut! Cupiditate, necessitatibus?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__image">
+                            <img src="./assets/images/services-02.jpg" alt="Web development" />
+                        </div>
+                        <div class="service__details d-flex f-column r-gap-1">
+                            <div class="service__icon"><i class="ri-code-s-slash-fill"></i></div>
+                            <div class="group">
+                                <p class="service__title subtitle-es">Développement Web</p>
+                                <div class="service__more body-sm d-flex align-center">
+                                    <p>Voir plus</p>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__btmsheet d-flex f-column">
+                            <span class="service__btmsheet-dragicon"></span>
+                            <p class="service__btmsheet-title body-lg">Ce que je Fournis</p>
+                            <p class="service__btmsheet-text body-sm">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima magnam vitae eum cupiditate quasi! Deleniti exercitationem voluptatem dolorum
+                                aliquam sit?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__image">
+                            <img src="./assets/images/services-03.jpg" alt="Logo Design" />
+                        </div>
+                        <div class="service__details d-flex f-column r-gap-1">
+                            <div class="service__icon"><i class="ri-pen-nib-fill"></i></div>
+                            <div class="group">
+                                <p class="service__title subtitle-es">Logo Design</p>
+                                <div class="service__more body-sm d-flex align-center">
+                                    <p>Voir Plus</p>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__btmsheet d-flex f-column">
+                            <span class="service__btmsheet-dragicon"></span>
+                            <p class="service__btmsheet-title body-lg">Ce que je Fournis</p>
+                            <p class="service__btmsheet-text body-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis inventore, quae nulla, dicta quam ipsam hic quisquam corporis dignissimos officia
+                                laudantium ad repellendus asperiores, est eaque et. Omnis, soluta adipisci.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= CTA Section ============= -->
+        <section class="cta">
+            <div class="cta__container container">
+                <div class="cta__content cta__bg d-flex align-center justify-between f-wrap gap-2">
+                    <div class="group">
+                        <p class="cta__title subtitle-md">Commençons par votre prochain projet</p>
+                        <p class="cta__subtitle body-es">Toujours disponible en freelance si vous êtes prêt, n'hésitez pas à me contacter.</p>
+                    </div>
+                    <a href="#contact" class="cta__btn btn btn-primary d-flex align-center c-gap-1">Me contacter <i class="ri-send-plane-fill"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Testimonials Section ============= -->
+        <section class="testimonials">
+            <div class="section__title">
+                <h2 class="heading-2">Témoignages</h2>
+            </div>
+            <div class="testimonials__container container">
+                <div class="testimonials__content">
+                    <div class="testimonials__slider swiper">
+                        <div class="testimonials__slider-wrapper swiper-wrapper">
+                            <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+
+                                <div class="testimonials__slide-comment">
+                                    <img src="./assets/images/double-qoutes.svg" alt="" class="double-qoutes" />
+                                    <p class="body-sm">
+                                        Charles Fred a été un partenaire précieux dans la création de notre site web 
+                                        pour notre agence d'immobilier. Son approche collaborative et sa capacité à comprendre 
+                                        nos besoins spécifiques ont conduit à la réalisation d'un site web attractif et convivial. <br>
+                                        Grâce à son expertise technique et à ses conseils en matière de conception, 
+                                        nous avons pu offrir à nos clients une expérience en ligne exceptionnelle. 
+                                        Nous sommes reconnaissants pour son travail exceptionnel et nous le recommandons sans réserve.
+                                    </p>
+                                </div>
+
+                                <div class="group d-flex align-center gap-1">
+                                    <div class="testimonials__slide-pic">
+                                        <img src="./assets/images/pic-01.jpg" alt="Francise" />
+                                    </div>
+
+                                    <div class="group">
+                                        <p class="testimonials__slide-title subtitle-es">Francise</p>
+                                        <p class="testimonials__slide-subtitle body-es">client</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                                <div class="testimonials__slide-comment">
+                                    <img src="./assets/images/double-qoutes.svg" alt="" class="double-qoutes" />
+                                    <p class="body-sm">
+                                        Je suis plus que satisfaite du site web que Fred Charles a conçu pour présenter mon travail artistique. 
+                                        Son approche créative et sa capacité à saisir l'essence de mon style artistique ont abouti à un site web 
+                                        qui non seulement met en valeur mes œuvres, mais qui offre également une expérience immersive pour les visiteurs. <br>
+                                        Grâce à ce nouveau canal de présentation, j'ai pu élargir mon audience et attirer l'intérêt de galeries et de collectionneurs.
+                                        Je recommande chaudement Fred Charles à tous les artistes cherchant à créer une présence en ligne distinctive.
+                                    </p>
+                                </div>
+
+                                <div class="group d-flex align-center gap-1">
+                                    <div class="testimonials__slide-pic">
+                                        <img src="./assets/images/pic-02.jpg" alt="Fréderic" />
+                                    </div>
+
+                                    <div class="group">
+                                        <p class="testimonials__slide-title subtitle-es">Fréderic</p>
+                                        <p class="testimonials__slide-subtitle body-es">client</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                                <div class="testimonials__slide-comment">
+                                    <img src="./assets/images/double-qoutes.svg" alt="" class="double-qoutes" />
+                                    <p class="body-sm">
+                                        Je suis absolument ravie du site web que Charles Fred a réalisé pour ma boutique en ligne de bijoux. 
+                                        Son professionnalisme et son souci du détail se reflètent dans chaque aspect du site, qui est à la fois esthétiquement magnifique 
+                                        et fonctionnellement intuitif. <br>
+                                        Grâce à son travail exceptionnel, j'ai pu non seulement améliorer l'expérience de mes clients en ligne, 
+                                        mais aussi augmenter mes ventes de manière significative. 
+                                        Je recommande vivement Charles Fred à quiconque cherche à créer un site web de qualité.
+                                    </p>
+                                </div>
+
+                                <div class="group d-flex align-center gap-1">
+                                    <div class="testimonials__slide-pic">
+                                        <img src="./assets/images/pic-03.jpg" alt="Lamia" />
+                                    </div>
+
+                                    <div class="group">
+                                        <p class="testimonials__slide-title subtitle-es">Lamia</p>
+                                        <p class="testimonials__slide-subtitle body-es">client</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slider-pagination swiper-pagination"></div>
+                    </div>
+                    <button type="button" class="testimonials__btn-left btn swiper-button-prev"><i class="ri-arrow-left-s-line"></i></button>
+                    <button type="button" class="testimonials__btn-right btn swiper-button-next"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Contact Section ============= -->
+        <section id="contact" class="contact">
+            <div class="section__title">
+                <h2 class="heading-2">Me Contacter</h2>
+            </div>
+            <div class="contact__container container">
+                <div class="contact__content d-flex justify-between f-wrap gap-2">
+                    <div class="contact__info-list d-flex f-column gap-2">
+                        <div class="contact__info-item">
+                            <a href="tel:+33 0783793963" class="d-flex align-center c-gap-2">
+                                <i class="ri-phone-fill heading-3"></i>
+                                <div class="group">
+                                    <p class="contact__title heading-4">Mon Téléphone</p>
+                                    <p class="contact__subtitle body-es">+33 7 83 79 39 63</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact__info-item">
+                            <a href="mailto:hector.fred95@gmail.com" class="d-flex align-center c-gap-2">
+                                <i class="ri-mail-fill heading-3"></i>
+                                <div class="group">
+                                    <p class="contact__title heading-4">email</p>
+                                    <p class="contact__subtitle body-es">hector.fred95@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact__info-item">
+                            <a href="https://www.google.com/maps/dir//43+Rue+du+G%C3%A9n%C3%A9ral+de+Gaulle,+95220+Herblay-sur-Seine/@48.9899375,2.0829028,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e660e55ad760a1:0x35e11a60df32fab9!2m2!1d2.16533!2d48.9899753?entry=ttu" class="d-flex align-center c-gap-2">
+                                <i class="ri-map-pin-fill heading-3"></i>
+                                <div class="group">
+                                    <p class="contact__title heading-4">location</p>
+                                    <p class="contact__subtitle body-es">Herblay-SurSeine, 95220</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="form" id="contact-form">
+                        <div class="group d-flex gap-2 f-column">
+                            <div class="group d-flex gap-2 align-center f-wrap">
+                                <div class="form__group">
+                                    <label for="name" class="form__label body-es">nom</label>
+                                    <input type="text" name="user_name" id="name" class="input-primary form__input" autocomplete="off" required />
+                                </div>
+                                <div class="form__group">
+                                    <label for="email" class="form__label body-es">email</label>
+                                    <input type="text" name="user_email" id="email" class="input-primary form__input" autocomplete="off" required />
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <label for="subject" class="form__label body-es">sujet</label>
+                                <input type="text" name="subject" id="subject" class="input-primary form__input" autocomplete="off" required />
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label body-es">message</label>
+                                <textarea type="text" name="message" id="message" class="input-primary form__input" autocomplete="off" required></textarea>
+                            </div>
+                            <div class="form__status-box">
+                                <p class="body-es"></p>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-primary d-flex align-center c-gap-1">Contact me <i class="ri-send-plane-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Footer ============= -->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__content d-flex justify-between">
+                    <div class="group">
+                        <h3 class="footer__title heading-3">FRED</h3>
+                        <p class="footer__subtitle body-sm">Développeur Full Stack</p>
+                    </div>
+                    <div class="footer__scoial-links d-flex c-gap-1">
+                        <a href="#" class="footer__social-link subtitle-es">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+                        <a href="#" class="footer__social-link subtitle-es">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#" class="footer__social-link subtitle-es">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyRight">
+                <p class="body-sm">&copy; 2024 <span>CHARLES Fred</span> Tous droits Réservés</p>
+            </div>
+        </footer>
+
+        <!-- ============= Scroll Up ============= -->
+        <button type="button" class="btn btn-primary scroll-up d-flex align-center justify-center"><i class="ri-arrow-up-line"></i></button>
+    </body>
+</html>
