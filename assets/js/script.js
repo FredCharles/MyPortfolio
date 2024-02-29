@@ -170,20 +170,20 @@ let educations = [
     {
         type: "experience",
         title: "Développeur Web Junior",
-        position: "HTML & CSS JavaScript",
+        position: "HTML, CSS, JavaScript, PHP.",
         date: {
             startDate: "Septembre 2023",
-            endDate: "2024",
+            endDate: "Présent",
         },
         desc: "En lançant Blueberry, j'ai eu l'occasion de mettre en pratique ma passion pour la conception web en créant des sites web sur mesure qui ont aidé nos clients à atteindre leurs objectifs commerciaux et à se démarquer dans un marché numérique en constante évolution.",
     },
     {
         type: "experience",
         title: "Développeur Web Junior",
-        position: "HTML, CSS, JavaScript, PHP",
+        position: "HTML, CSS, JavaScript, PHP.",
         date: {
-            startDate: "Septembre 2023 ",
-            endDate: "present",
+            startDate: "Décembre",
+            endDate: "2023",
         },
         desc: "Grâce à ma maîtrise des langages de programmation web tels que HTML, CSS, JavaScript et PHP, j'ai pu concevoir et mettre en œuvre mon portfolio personnel, en mettant en avant mes compétences en développement front-end et back-end pour offrir une expérience utilisateur exceptionnelle.",
     },
