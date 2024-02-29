@@ -22,10 +22,12 @@ body {
 
 .header__container {
     height: 100%;
+    margin-top: 1rem;
 }
 
 .header__logo {
-    height: 60%;
+    height: 100%;
+    width: 20%;
 }
 
 /* navbar for large screens */

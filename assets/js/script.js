@@ -41,47 +41,37 @@ function hideMobNavbar() {
 // Skills & Tools
 let skills = [
     {
-        skillTitle: "Frontend Developer",
-        skillText: "More than 3 years",
+        skillTitle: "Développeur Frontend",
+        skillText: "Plus de 3 ans",
         icon: "ri-code-s-slash-fill",
         tools: [
             { toolName: "HTML", toolValue: 90 },
-            { toolName: "CSS", toolValue: 90 },
-            { toolName: "JavaScript", toolValue: 75 },
-            { toolName: "React", toolValue: 70 },
+            { toolName: "CSS", toolValue: 70 },
+            { toolName: "JavaScript", toolValue: 25 },
+            //{ toolName: "React", toolValue: 70 },//
         ],
     },
     {
-        skillTitle: "Backend Developer",
-        skillText: "More than 2 years",
+        skillTitle: "Développeur Backend",
+        skillText: "2 ans",
         icon: "ri-server-fill",
         tools: [
-            { toolName: "PHP", toolValue: 65 },
-            { toolName: "NodeJS", toolValue: 75 },
-            { toolName: "Express", toolValue: 70 },
+            { toolName: "PHP", toolValue: 15 },
+            { toolName: "NodeJS", toolValue: 15 },
+            //{ toolName: "Express", toolValue: 70 },//
         ],
     },
     {
         skillTitle: "UI\\UX Design",
-        skillText: "More than 2 years",
+        skillText: "1 année",
         icon: "ri-pen-nib-fill",
         tools: [
-            { toolName: "Figma", toolValue: 80 },
-            { toolName: "Adobe XD", toolValue: 75 },
-        ],
-    },
-    {
-        skillTitle: "Data Science",
-        skillText: "More than 3 years",
-        icon: "ri-bubble-chart-fill",
-        tools: [
-            { toolName: "Python", toolValue: 80 },
-            { toolName: "Numpy", toolValue: 70 },
-            { toolName: "Pandas", toolValue: 75 },
-            { toolName: "PyTorch", toolValue: 65 },
+            { toolName: "Figma", toolValue: 20 },
+            //{ toolName: "Adobe XD", toolValue: 75 },//
         ],
     },
 ];
+
 
 function skillComponent({ skillTitle, skillText, icon, tools }) {
     return `
@@ -149,53 +139,53 @@ function renderSkills() {
 let educations = [
     {
         type: "education",
-        title: "Data Science & Artificial Intelligence",
-        position: "Jordan, University",
+        title: "Formation Complète Développeur Web",
+        position: "UDEMY, Formateur, John Taieb",
         date: {
-            startDate: "Oct 10, 2014",
-            endDate: "2018",
+            startDate: "2019",
+            endDate: "2020",
         },
-        desc: "Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam",
+        desc: "Ma première formation sur Le Développement Web de A à Z. Où j'ai appris HTML, CSS, Javascript, jQuery, Bootstrap, PHP, MySQL, Wordpress.",
     },
     {
         type: "education",
-        title: "Web Development",
-        position: "Self tut",
+        title: "FORMATION COMPLETE POUR DEVENIR FULL-STACK",
+        position: "UDEMY, Formateur, Nael Ould",
         date: {
-            startDate: "Jun 15, 2017",
-            endDate: "present",
+            startDate: "2021",
+            endDate: "2022",
         },
-        desc: "Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam",
+        desc: "TOUT MAÎTRISER SUR LE DEVELOPPEMENT WEB DE A à Z: NodeJs, HTML/CSS,Javascript, MongoDB,MySQL,Socket IO...",
     },
     {
         type: "education",
-        title: "Web Design",
-        position: "Self tut",
+        title: "Baccalauréat Professionnel",
+        position: "Lycée Professionel Privé de Blanchet",
         date: {
-            startDate: "Dec 10, 2019",
-            endDate: "present",
+            startDate: "Septembre 2015",
+            endDate: "Juillet 2018",
         },
-        desc: "Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam",
+        desc: "Obtention de Baccalauréat Professionnel ELEEC.",
     },
     {
         type: "experience",
-        title: "Cloud Computing",
-        position: "Jordan, Microsoft",
+        title: "Développeur Web Junior",
+        position: "HTML & CSS JavaScript",
         date: {
-            startDate: "Mar 10, 2018",
-            endDate: "2021",
+            startDate: "Septembre 2023",
+            endDate: "2024",
         },
-        desc: "Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam",
+        desc: "En lançant Blueberry, j'ai eu l'occasion de mettre en pratique ma passion pour la conception web en créant des sites web sur mesure qui ont aidé nos clients à atteindre leurs objectifs commerciaux et à se démarquer dans un marché numérique en constante évolution.",
     },
     {
         type: "experience",
-        title: "Freelancing Web Development",
-        position: "Jordan, Home",
+        title: "Développeur Web Junior",
+        position: "HTML, CSS, JavaScript, PHP",
         date: {
-            startDate: "Mar 15, 2021 ",
+            startDate: "Septembre 2023 ",
             endDate: "present",
         },
-        desc: "Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam",
+        desc: "Grâce à ma maîtrise des langages de programmation web tels que HTML, CSS, JavaScript et PHP, j'ai pu concevoir et mettre en œuvre mon portfolio personnel, en mettant en avant mes compétences en développement front-end et back-end pour offrir une expérience utilisateur exceptionnelle.",
     },
 ];
 
