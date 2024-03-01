@@ -182,8 +182,8 @@ let educations = [
         title: "Développeur Web Junior",
         position: "HTML, CSS, JavaScript, PHP.",
         date: {
-            startDate: "Décembre",
-            endDate: "2023",
+            startDate: "Décembre 2023",
+            endDate: "Janvier 2024",
         },
         desc: "Grâce à ma maîtrise des langages de programmation web tels que HTML, CSS, JavaScript et PHP, j'ai pu concevoir et mettre en œuvre mon portfolio personnel, en mettant en avant mes compétences en développement front-end et back-end pour offrir une expérience utilisateur exceptionnelle.",
     },

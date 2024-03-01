@@ -22,12 +22,21 @@ body {
 
 .header__container {
     height: 100%;
-    margin-top: 2.1rem;
 }
 
 .header__logo {
-    height: 100px;
-    width: 120px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--gray-80);
+    text-decoration: underline;
+}
+.header__logo span
+{
+    color: var(--blue-75);
+}
+strong
+{
+    font-size: 1.1rem;
 }
 
 /* navbar for large screens */
@@ -717,7 +726,7 @@ svg#scroll-down:hover circle {
 .testimonials__slide-comment {
     padding-bottom: var(--padding-1);
     border-bottom: 2px solid var(--gray-80);
-    color: black;
+    color: var(--text-alt-1);
 }
 
 .testimonials__slide-comment .double-qoutes {
